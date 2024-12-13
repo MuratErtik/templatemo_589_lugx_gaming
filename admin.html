@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-lugx-gaming.css">
+    <title>Admin Panel</title>
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        .form-container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin: 30px auto;
+            max-width: 800px;
+        }
+
+        .form-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .form-group label {
+            font-weight: 600;
+        }
+
+        .btn-primary {
+            background-color: #2c6ee8;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #2357c8;
+        }
+    </style>
+</head>
+
+<body>
+    
+
+    <div class="container">
+        <!-- Announcement Add Form -->
+        <div class="form-container">
+            <h3 class="form-title">Add Announcement</h3>
+            <form>
+                <div class="form-group">
+                    <label for="announcement-title">Announcement Title</label>
+                    <input type="text" class="form-control" id="announcement-title" placeholder="Enter title" required>
+                </div>
+                <div class="form-group">
+                    <label for="announcement-content">Announcement Content</label>
+                    <textarea class="form-control" id="announcement-content" rows="3" placeholder="Enter content"
+                        required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="announcement-pdf">PDF File</label>
+                    <input type="file" class="form-control" id="announcement-pdf" accept=".pdf" required>
+                </div>
+                <div class="form-group">
+                    <label for="announcement-word">Word File</label>
+                    <input type="file" class="form-control" id="announcement-word" accept=".doc, .docx" required>
+                </div>
+                <div class="form-group">
+                    <label for="announcement-image">Announcement Image</label>
+                    <input type="file" class="form-control" id="announcement-image" accept="image/*" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Add Announcement</button>
+            </form>
+        </div>
+<hr>
+        <!-- Movie/Series Add Form -->
+        <div class="form-container">
+            <h3 class="form-title">Add Movie/Series</h3>
+            <form>
+                <div class="form-group">
+                    <label for="movie-title">Movie/Series Title</label>
+                    <input type="text" class="form-control" id="movie-title" placeholder="Enter title" required>
+                </div>
+                <div class="form-group">
+                    <label for="movie-description">Description</label>
+                    <textarea class="form-control" id="movie-description" rows="3" placeholder="Enter description"
+                        required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="movie-price">Price</label>
+                    <input type="number" class="form-control" id="movie-price" placeholder="Enter price" required>
+                </div>
+                <div class="form-group">
+                    <label for="movie-image">Upload Image</label>
+                    <input type="file" class="form-control" id="movie-image" accept="image/*" required>
+                </div>
+                <div class="form-group">
+                    <label for="movie-seasons">Number of Seasons</label>
+                    <input type="number" class="form-control" id="movie-seasons" placeholder="Enter number of seasons (Or minutes)"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="movie-type">Type (Movie/Series)</label>
+                    <input type="text" class="form-control" id="movie-title" placeholder="Enter type" required>
+                       
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Add Movie/Series</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+<footer>
+    <div class="container">
+      <div class="col-lg-12">
+        <p>Copyright © 2048 LUGX Gaming Company. All rights reserved. &nbsp;&nbsp; <a rel="nofollow"
+            href="https://templatemo.com" target="_blank">Design: TemplateMo</a>
+        <p style="margin-top: -40px;">Address: 2011 Route 9 12845 New York, US </p>
+        <p style="margin-top: -40px;">Phone: +1 518 545 7441 </p>
+        <p style="margin-top: -40px;">Email: lugx@contact.com</p>
+
+
+
+
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</html>

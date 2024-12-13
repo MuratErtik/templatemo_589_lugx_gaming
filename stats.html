@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stats</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-lugx-gaming.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!--
+
+TemplateMo 589 lugx gaming
+
+https://templatemo.com/tm-589-lugx-gaming
+
+-->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    <style>
+        #when-we-established {
+            scroll-margin-top: 100px;
+            /* Header yüksekliği kadar boşluk */
+        }
+    </style>
+    <style>
+        #why-we-established {
+            scroll-margin-top: 100px;
+            /* Header yüksekliği kadar boşluk */
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            <img src="assets/images/logo.png" alt="" style="width: 158px;">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li class="has-submenu">
+                  <a href="shop.html">Our Shop</a>
+                  <ul class="submenu">
+                    <li><a href="shop.html?filter=comedy">COMEDY</a></li>
+                    <li><a href="shop.html?filter=drama">DRAMA</a></li>
+                    <li><a href="shop.html?filter=sci-fi">SCI-FI</a></li>
+  
+  
+                  </ul>
+                </li>
+  
+                <li><a href="highly-recommended.html">Highly Recommended</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+  
+                <li class="has-submenu">
+                  <a href="crew.html">Crew!</a>
+                  <ul class="submenu">
+                    <li><a href="crew.html#it">IT</a></li>
+                    <li><a href="crew.html#editorial">Editorial</a></li>
+  
+                  </ul>
+                </li>
+  
+  
+  
+                <!-- Our Missions & Visions with Submenu -->
+                <li class="has-submenu">
+                  <a href="ourms.html">Our Missions & Visions</a>
+                  <ul class="submenu">
+                    <li><a href="ourms.html#mission">MISSION</a></li>
+                    <li><a href="ourms.html#vision">VISION</a></li>
+                    <li><a href="stats.html">Stats</a></li>
+  
+  
+                  </ul>
+                </li>
+                <li class="has-submenu">
+                  <a href="aboutus.html">About Us</a>
+                  <ul class="submenu">
+                    <li><a href="aboutus.html#when-we-established">WHEN</a></li>
+                    <li><a href="announcement.html">ANNOUNCEMENTS</a></li>
+  
+                    <li><a href="aboutus.html#why-we-established">WHY</a></li>
+  
+                  </ul>
+                </li>
+  
+  
+              </ul>
+              <a class='menu-trigger'>
+                <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+  
+              <!-- CSS -->
+              <style>
+                /* General Styling for Navigation */
+                .nav {
+                  list-style: none;
+                  padding: 0;
+                  margin: 0;
+                  display: flex;
+                }
+  
+                .nav li {
+                  position: relative;
+                  /* For submenu positioning */
+                  margin: 0 4px;
+                }
+  
+                .nav a {
+                  text-decoration: none;
+                  padding: 10px 15px;
+                  display: block;
+                  color: #fff;
+                  /* Adjust text color */
+                  background-color: transparent;
+                }
+  
+                /* Submenu Styling */
+                .submenu {
+                  list-style: none;
+                  padding: 0;
+                  margin: 0;
+                  position: absolute;
+                  top: 100%;
+                  /* Below the parent menu item */
+                  left: 0;
+                  background-color: #2c6ee8;
+                  /* Background color for submenu */
+                  border: 1px solid #ccc;
+                  display: none;
+                  /* Initially hidden */
+                  z-index: 1000;
+                  min-width: 200px;
+                  /* Adjust width as needed */
+                }
+  
+                .submenu li {
+                  margin: 0;
+                }
+  
+                .submenu a {
+                  padding: 10px 20px;
+                  display: block;
+                  color: #333;
+                  /* Submenu text color */
+                  background-color: #fff;
+                  /* Submenu background */
+                  white-space: nowrap;
+                  /* Prevent text wrapping */
+                  border-bottom: 1px solid #ddd;
+                  /* Optional: Add border between items */
+                }
+  
+                /* Show submenu on hover */
+                .has-submenu:hover .submenu {
+                  display: block;
+                  /* Make submenu visible */
+                }
+  
+                /* Hover effects */
+                .nav a:hover,
+                .submenu a:hover {
+                  background-color: #fd0d0d;
+                  /* Highlight color */
+                  color: #fff;
+                  /* Text color on hover */
+                }
+              </style>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <div class="page-heading header-text">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3>STATS!</h3>
+                    <!-- <span class="breadcrumb"><a href="#">Home</a>  >  <a href="#">Shop</a>  >  The Office</span> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="single-Highly Recommended section">
+        <div class="container">
+            <div class="row">
+            </div>
+            <div class="col-lg-6 align-self-center">
+
+
+
+                <form id="qty" action="#">
+                    <br>
+
+                </form>
+                <br>
+
+            </div>
+            <div class="col-lg-12">
+                <div class="sep"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <!-- İstatistik Kutuları -->
+            <div class="col-md-3">
+                <div class="card text-white bg-primary mb-3">
+                    <div class="card-header">Movie</div>
+                    <div class="card-body">
+                        <h5 class="card-title">+20,000</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-white bg-success mb-3">
+                    <div class="card-header">Customer</div>
+                    <div class="card-body">
+                        <h5 class="card-title">1,2000</h5>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="col-md-3">
+                <div class="card text-white bg-danger mb-3">
+                    <div class="card-header">Total Money</div>
+                    <div class="card-body">
+                        <h5 class="card-title">35,000</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <!-- Grafikler -->
+            <div class="col-md-6">
+                <canvas id="chart1"></canvas>
+            </div>
+            <div class="col-md-6">
+                <canvas id="chart2"></canvas>
+            </div>
+            <div class="col-md-6 mt-4">
+                <canvas id="chart3"></canvas>
+            </div>
+            <div class="col-md-6 mt-4">
+                <canvas id="chart4"></canvas>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <footer>
+        <div class="container">
+            <div class="col-lg-12">
+                <p>Copyright © 2048 LUGX Company. All rights reserved. &nbsp;&nbsp; <a rel="nofollow"
+                        href="https://templatemo.com" target="_blank">Design: TemplateMo</a>
+                <p style="margin-top: -40px;">Address: 2011 Route 9 12845 New York, US </p>
+                <p style="margin-top: -40px;">Phone: +1 518 545 7441 </p>
+                <p style="margin-top: -40px;">Email: lugx@contact.com</p>
+
+
+
+
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/counter.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        const ctx1 = document.getElementById('chart1').getContext('2d');
+        new Chart(ctx1, {
+            type: 'bar',
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May'],
+                datasets: [{
+                    label: 'New Customers',
+                    data: [10000, 15000, 20000, 25000, 30000],
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            }
+        });
+
+        const ctx2 = document.getElementById('chart2').getContext('2d');
+        new Chart(ctx2, {
+            type: 'pie',
+            data: {
+                labels: ['Action', 'Comedy', 'SCI-FI', 'DRAMA'],
+                datasets: [{
+                    data: [40, 25, 20, 15],
+                    backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0']
+                }]
+            }
+        });
+
+        const ctx3 = document.getElementById('chart3').getContext('2d');
+        new Chart(ctx3, {
+            type: 'line',
+            data: {
+                labels: ['2020', '2021', '2022', '2023', '2024'],
+                datasets: [{
+                    label: 'Daily Logins',
+                    data: [5000, 7000, 9000, 12000, 15000],
+                    borderColor: '#FF5733',
+                    tension: 0.4
+                }]
+            }
+        });
+
+        const ctx4 = document.getElementById('chart4').getContext('2d');
+        new Chart(ctx4, {
+            type: 'doughnut',
+            data: {
+                labels: ['Male', 'Female'],
+                datasets: [{
+                    data: [60, 40],
+                    backgroundColor: ['#FF6384', '#36A2EB']
+                }]
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
